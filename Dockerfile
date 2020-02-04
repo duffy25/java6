@@ -1,15 +1,15 @@
 FROM centos7
 MAINTAINER duffy
 
-#RUN \
-#    yum -y install wget;\
-#    cd /usr ;\
-#    wget --no-cookies --no-check-certificate "http://download.slogra.com/java/jdk-6u32-linux-i586.bin" -O /tmp/jdk-6u32-linux-i586.bin;\
-#    yum -y remove wget;\
-#    yum -y clean all
+RUN \
+    yum -y install wget;\
+    cd /usr ;\
+    wget --no-cookies --no-check-certificate "http://download.slogra.com/java/jdk-6u32-linux-i586.bin" -O /tmp/jdk-6u32-linux-i586.bin;\
+    yum -y remove wget;\
+    yum -y clean all
 
-# alternate  java method disabled: download local jdk
-ADD jdk-6u32-linux-i586.bin /usr/
+# download local jdk
+#ADD jdk-6u32-linux-i586.bin /usr/
 
 RUN \
     echo yes|sh /usr/jdk-6u32-linux-i586.bin ;\

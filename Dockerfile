@@ -4,7 +4,7 @@ MAINTAINER duffy
 RUN \
     yum -y install wget;\
     cd /usr ;\
-    wget --no-cookies --no-check-certificate "http://download.slogra.com/java/jdk-6u32-linux-i586.bin" -O /tmp/jdk-6u32-linux-i586.bin;\
+    wget --no-cookies --no-check-certificate "http://download.slogra.com/java/jdk-6u32-linux-i586.bin" -O /usr/jdk-6u32-linux-i586.bin;\
     yum -y remove wget;\
     yum -y clean all
 

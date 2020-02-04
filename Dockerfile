@@ -12,7 +12,7 @@ RUN \
 #ADD jdk-6u32-linux-i586.bin /usr/
 
 RUN \
-    echo yes|sh /usr/jdk-6u32-linux-i586.bin ;\
+    echo yes|sh /usr/jdk-6u32-linux-i586.bin;\
     rm /usr/jdk-6u32-linux-i586.bin;\
     mv jdk1.6.0_32 java
     

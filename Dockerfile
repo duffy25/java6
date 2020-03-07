@@ -1,4 +1,4 @@
-FROM centos
+FROM centos:7
 
 
 ENV JAVA_HOME /usr/lib/jvm/java-openjdk

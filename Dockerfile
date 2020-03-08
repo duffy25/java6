@@ -12,5 +12,7 @@ RUN \
 ENV JAVA_HOME /usr/lib/jvm/jre-openjdk
 ENV LANG zh_CN.UTF-8
 ENV LC_ALL zh_CN.UTF-8
+ENV TZ "Asia/Shanghai"
+ENV TERM xterm
 
 CMD ["bash"]
